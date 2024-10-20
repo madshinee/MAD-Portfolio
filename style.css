@@ -1,0 +1,872 @@
+/* Styles généraux */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: monospace;
+    background-color: black;
+    color: white;
+}
+
+html {
+    scroll-padding-top: 120px; /* Ajustez cette valeur selon la hauteur de votre header */
+}
+
+/* En-tête */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: black;
+    z-index: 1000;
+}
+
+  
+        
+        header h1 {
+            color: white;
+            font-size: 24px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0 30px;
+        }
+        nav ul li a {
+            color: skyblue ;
+            text-decoration: none;
+            font-size: 18px;
+
+        }
+       
+        .profile {
+    text-align: center;
+    margin-top: 50px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centre les éléments verticalement */
+    align-items: center; /* Centre les éléments horizontalement */
+}
+
+.profile {
+    text-align: center;
+    margin-top: 50px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centre les éléments verticalement */
+    align-items: center; /* Centre les éléments horizontalement */
+    position: relative; /* Position relative pour ajuster l'image */
+}
+
+.profile img {
+    width: 750px; /* Augmente la largeur de l'image */
+    height: auto; /* Conserve les proportions de l'image */
+    margin: 0 auto; /* Centre l'image horizontalement */
+    position: absolute; /* Position absolue pour ajuster plus facilement */
+    left: 50%; /* Décale légèrement l'image vers la gauche */
+    transform: translateX(-50%); /* Assure que l'image est bien centrée */
+}
+
+
+
+.profile h2, .profile p, .profile h3 {
+    position: absolute; /* Position absolue pour placer le texte au-dessus de l'image */
+    left: 49%; /* Centre le texte horizontalement */
+    transform: translate(-50%, -50%); /* Centre parfaitement */
+    color: white; /* Assure que le texte est visible sur l'image */
+    text-align: center; /* Centre le texte */
+    width: 80%; /* Ajuste la largeur du texte */
+    margin: 0; /* Enlève toutes les marges */
+}
+
+.profile h2 {
+    top: 30%; /* Positionne le h2 */
+    font-size: 36px; /* Ajuste la taille de la police du h2 */
+    margin-bottom: 10px; /* Ajoute un petit espace sous le h2 */
+    color: white; /* Couleur de base du texte */
+    text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px white; /* Effet néon blanc */
+}
+
+.profile h3 {
+    top: 40%; /* Positionne le h3 */
+    font-size: 36px; /* Ajuste la taille de la police du h3 */
+    margin-bottom: 10px; /* Ajoute un petit espace sous le h3 */
+    color: lightpink; /* Couleur de base du texte */
+    text-shadow: 0 0 10px lightpink, 0 0 20px lightpink, 0 0 30px lightpink, 0 0 40px lightpink; /* Effet néon rose clair */
+}
+
+.profile p {
+    top: 50%; /* Positionne le p */
+    font-size: 24px; /* Ajuste la taille de la police du p */
+    margin-top: 0; /* Assure qu'il n'y a pas de marge en haut du paragraphe */
+    color: violet; /* Couleur de base du texte */
+    text-shadow: 0 0 10px violet, 0 0 20px violet, 0 0 30px violet, 0 0 40px violet; /* Effet néon violet clair */
+}
+
+
+section {
+    padding: 20px;
+}
+
+
+
+/* Accueil */
+#accueil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 20%;
+}
+
+#accueil h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+#accueil p {
+    font-size: 1.8rem;
+    color: pink;
+}
+
+/* À propos */
+              #propos {
+            margin: 50px auto;
+            padding: 20px;
+            max-width: 1000px;
+            text-align: center;
+        }
+        #propos h2 {
+           font-size: 3rem;
+    margin-bottom: 20px;
+    color: white;
+        }
+        .propos-content {
+            background-color: rgba(255, 192, 203, 0.05);
+box-shadow: 0 0 10px rgba(255, 182, 193, 0.5), 0 0 20px rgba(255, 182, 193, 0.5), 0 0 30px rgba(255, 182, 193, 0.5), 0 0 40px rgba(255, 182, 193, 0.5); /* Effet néon rose clair */
+    border: 2px solid white; /* Ajoute un contour blanc */
+
+            border-radius: 10px;
+            padding: 20px;
+            font-size: 24px;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .propos-content img {
+            max-width: 200px;
+            height: auto;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+        .propos-content p {
+            text-align: left;
+            margin: 0;
+        }
+        #interets {
+            padding: 20px;
+            margin-top: 100px; /* Add large space between the two sections */
+        }
+    #interets h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    animation: snake 3s linear infinite; /* Assure-toi que le nom de l'animation est correct */
+}
+
+@keyframes snake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(45px);
+    }
+    50% {
+        transform: translateX(-45px);
+    }
+    75% {
+        transform: translateX(60px);
+    }
+}
+
+
+.interets-container {
+    background-color: rgba(255, 192, 203, 0.05);
+box-shadow: 0 0 10px rgba(255, 182, 193, 0.5), 0 0 20px rgba(255, 182, 193, 0.5), 0 0 30px rgba(255, 182, 193, 0.5), 0 0 40px rgba(255, 182, 193, 0.5); /* Effet néon rose clair */
+    border: 2px solid white; /* Ajoute un contour blanc */
+    position: relative;
+    height: 245px; /* Ajuster la hauteur selon tes besoins */
+    overflow: hidden; /* Cache les éléments dépassant le conteneur */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.interet {
+    position: relative; /* Position relative pour les animations */
+    animation: snake 3s infinite ease-in-out; /* Animation de mouvement en serpent */
+}
+
+/* Différentes animations pour chaque image pour éviter la synchronisation */
+.interet:nth-child(1) { animation-delay: 0s; }
+.interet:nth-child(2) { animation-delay: 0.2s; }
+.interet:nth-child(3) { animation-delay: 0.4s; }
+.interet:nth-child(4) { animation-delay: 0.6s; }
+.interet:nth-child(5) { animation-delay: 0.8s; }
+.interet:nth-child(6) { animation-delay: 1s; }
+.interet:nth-child(7) { animation-delay: 1.2s; }
+
+.interet img {
+    max-width: 127px; /* Taille des images */
+    height: auto;
+    border-radius: 10px;
+}
+
+
+/* Compétences */
+.page {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto; /* Centre l'ensemble de la page */
+}
+
+.page h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: white;
+    text-align: center; /* Centre le texte horizontalement */
+    margin: 0 auto; /* Centre les marges automatiques */
+    padding: 20px 0; /* Ajoute de l'espace en haut et en bas du titre */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 60px; /* Espace de 40px entre les deux blocs */
+    margin-top: 20px;
+    padding: 20px 0; /* Ajoute un espace en haut et en bas du conteneur */
+}
+
+.column {
+    width: 40%;
+    background-color: rgba(255, 192, 203, 0.05);
+
+    padding: 20px;
+    border: 2px solid white; /* Ajoute un contour blanc */
+    border-radius: 10px;
+    text-align: center;
+box-shadow: 0 0 10px rgba(135, 206, 235, 0.5), 0 0 20px rgba(135, 206, 235, 0.5), 0 0 30px rgba(135, 206, 235, 0.5), 0 0 40px rgba(135, 206, 235, 0.5); /* Effet néon skyblue */
+}
+
+.column h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: white;
+    
+}
+
+.column ul {
+    list-style: disc; /* Ajoute des puces */
+    padding-left: 20px; /* Espace à gauche pour les puces */
+    text-align: justify; /* Justifie le texte */
+}
+
+.column ul li {
+    margin-bottom: 10px; /* Espace entre chaque élément de la liste */
+    font-size: 1.3rem;
+}
+
+
+.skills-title {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 40px;
+}
+
+
+    .skills {
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 1000px;
+    position: relative;
+}
+
+.skills h3 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.skills .images-container {
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden; /* Cache le débordement pour l'effet infini */
+    gap: 20px;
+    padding: 20px 0;
+    padding-bottom: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    border: 2px solid; /* Ajoute une bordure */
+    border-image: linear-gradient(45deg, white);
+box-shadow: 0 0 10px rgba(135, 206, 235, 0.5), 0 0 20px rgba(135, 206, 235, 0.5), 0 0 30px rgba(135, 206, 235, 0.5), 0 0 40px rgba(135, 206, 235, 0.5); /* Effet néon skyblue */
+}
+
+.skills .images-container:hover {
+    animation-play-state: paused; /* Pause animation on hover */
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.skills img {
+    width: 30px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+    box-shadow: 0 0 10px rgba(138, 43, 226, 0.5), 0 0 10px rgba(0, 0, 255, 0.5), 0 0 10px rgba(255, 20, 147, 0.5), 0 0 10px rgba(0, 255, 0, 0.5);
+    animation: scroll 3s linear infinite; /* Makes the images scroll continuously */
+}
+
+.skills img:hover {
+    transform: scale(1.1);
+    box-shadow: white;
+    filter: brightness(1.2);
+}
+
+
+
+
+
+/* Projets */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px; /* Augmente l'espace entre les projets */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.project {
+    flex: 0 1 calc(33.333% - 20px);
+    max-width: 350px;
+    margin-bottom: 90px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid skyblue;
+    transition: border-color 0.3s ease;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(135, 206, 235, 0.5), 0 0 20px rgba(135, 206, 235, 0.5), 0 0 30px rgba(135, 206, 235, 0.5), 0 0 40px rgba(135, 206, 235, 0.5); /* Effet néon skyblue */
+
+}
+
+.project:hover {
+    border-color: violet;
+}
+
+.project img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 3px;
+    transition: transform 0.3s ease;
+}
+
+.project:hover img {
+    transform: scale(1.1);
+}
+
+.project .description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+    padding: 15px;
+    box-sizing: border-box;
+
+}
+
+.project:hover .description {
+    opacity: 1;
+}
+
+.project .description h3 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: violet;
+}
+
+.project .description p {
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.project .description a {
+    color: pink;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.project .description a:hover {
+    color: white;
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+    .project {
+        flex: 0 1 calc(50% - 20px);
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .project {
+        flex: 0 1 calc(50% - 20px);
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .project {
+        flex: 0 1 100%;
+        max-width: 100%;
+    }
+}
+
+/* Contacts */
+.contacts-section #contacts {
+    padding: 2rem;
+    width: 100%;
+    max-width: 800px;
+    margin: 2rem auto;
+}
+
+.contacts-section h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 5rem;
+    color: white;
+    text-align: center;
+}
+
+.contacts-section .contacts-container {
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+}
+
+.contacts-section .coordinates,
+.contacts-section .form-section {
+    width: 40%;
+    max-width: 300px;
+    background-color: rgba(255, 255, 255, 0.1); /* Blanc très transparent */
+    gap: 30rem; /* Augmente l'espace entre les projets */
+
+    padding: 3rem;
+    border-radius: 0.5rem;
+box-shadow: 0 0 10px rgba(255, 182, 193, 0.5), 0 0 20px rgba(255, 182, 193, 0.5), 0 0 30px rgba(255, 182, 193, 0.5), 0 0 40px rgba(255, 182, 193, 0.5); /* Effet néon rose clair */
+
+}
+
+.contacts-section h3 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 5rem;
+    color: white;
+}
+
+.contacts-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contacts-section li {
+    margin-bottom: 0.5rem;
+}
+
+.contacts-section a {
+    color: lightpink;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contacts-section a:hover {
+    color: pink;
+}
+
+
+
+.contacts-section ul li i {
+    margin-right: 10px;
+}
+
+/* Assure que les icônes sont bien alignées avec le texte */
+.contacts-section ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem; /* Augmente la taille de la police */
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+
+.contacts-section form div {
+    margin-bottom: 1rem;
+}
+
+.contacts-section label {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 0.25rem;
+
+
+
+}
+
+.contacts-section input,
+.contacts-section textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 1.5rem;
+    background-color: white;
+    color: white;
+}
+
+.contacts-section input:focus,
+.contacts-section textarea:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px violet;
+}
+
+.contacts-section button {
+    background-color: skyblue;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contacts-section button:hover {
+    background-color: pink;
+}
+
+@media (max-width: 768px) {
+    .contacts-section .contacts-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contacts-section .coordinates,
+    .contacts-section .form-section {
+        width: 90%;
+        max-width: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+.contacts-section .coordinates,
+.contacts-section .form-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.contacts-section .coordinates::before,
+.contacts-section .form-section::before,
+.contacts-section .coordinates::after,
+.contacts-section .form-section::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -50%;
+    left: -50%;
+    background: linear-gradient(
+        0deg,
+        transparent,
+        transparent,
+        skyblue,
+        white,
+        pink,
+        pink,
+        white,
+        skyblue,
+        transparent,
+        transparent
+    );
+    z-index: -1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+}
+
+
+
+.contacts-section .coordinates::after,
+.contacts-section .form-section::after {
+    animation-delay: -3s;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Ajoutez cette règle pour créer un fond qui masque le débordement de l'animation */
+.contacts-section .coordinates > *,
+.contacts-section .form-section > * {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    #accueil {
+        padding-left: 5%;
+    }
+
+    .container, .contacts-container {
+        flex-direction: column;
+    }
+
+    .column, .form-section, .coordinates {
+        width: 100%;
+    }
+
+    .project {
+        flex: 1 1 100%;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.page {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Error messages for form validation */
+.error {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+/* Additional styles for better visual hierarchy */
+h3 {
+    color: pink;
+    margin-top: 30px;
+}
+
+/* Improve readability of project descriptions */
+.project .description {
+    font-size: 0.9em;
+    line-height: 1.4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Style for links in the body text */
+p a, li a {
+    color: violet;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+p a:hover, li a:hover {
+    color: pink;
+    text-decoration: underline;
+}
+
+
+footer {
+    background-color: black; /* Couleur de fond sombre */
+    color: white; /* Texte en blanc */
+    padding: 20px 0; /* Espacement vertical */
+    text-align: center; /* Centrer le texte */
+    font-size: 1.8em; /* Taille de police légèrement plus petite */
+    margin-top: 30px; /* Espace au-dessus du footer */
+}
+
+footer .copyright {
+    max-width: 1200px; /* Largeur maximale du contenu */
+    margin: 0 auto; /* Centrer le contenu horizontalement */
+    padding: 0 20px; /* Espacement horizontal */
+}
+
+footer p {
+    margin: 0; /* Supprimer la marge par défaut du paragraphe */
+}
+
+/* Style pour les liens dans le footer, si nécessaire */
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* Cacher la barre de défilement pour Chrome, Safari et Opera */
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Cacher la barre de défilement pour IE, Edge et Firefox */
+body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+/* Barre de progression */
+#progress {
+    position: fixed;
+    top: 60px; /* Juste après le header */
+    left: 77px; /* Ajuste selon tes besoins pour décaler à droite */
+    height: calc(100% - 60px); /* Hauteur ajustée pour ne pas chevaucher le header */
+    width: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    z-index: 9999;
+}
+
+#progress-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: skyblue;
+    transition: height 0.2s ease;
+}
+
+#progress-ball {
+    width: 15px;
+    height: 15px;
+    background: skyblue;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: top 0.2s ease;
+}
+
+
+#meteor-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.meteor {
+    position: absolute;
+    width: 4px;  /* Augmentez cette valeur */
+    height: 4px; /* Augmentez cette valeur */
+    background-color: white;
+    box-shadow: 0 0 20px 4px white; /* Augmentez aussi l'ombre */
+}
