@@ -612,18 +612,6 @@ box-shadow: 0 0 10px rgba(255, 182, 193, 0.5), 0 0 20px rgba(255, 182, 193, 0.5)
 }
 
 
-@media (max-width: 600px) {
-    /* Styles spécifiques pour les petits écrans */
-    body {
-        font-size: 14px;
-    }
-    
-    .container {
-        width: 100%;
-        padding: 10px;
-    }
-
-
 
 
 
