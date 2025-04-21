@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 document.addEventListener('DOMContentLoaded', function() {
     const currentYear = new Date().getFullYear();
-    document.querySelector('.copyright p').innerHTML = `&copy; ${currentYear} by MAD.`;
+    document.querySelector('.copyright p').innerHTML = `&copy; ${currentYear} by Moi.`;
 });
 
 
